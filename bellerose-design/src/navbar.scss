@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@900&family=Montserrat&display=swap");
+
+$bodoni-moda: "bodoni-mota", serif;
+$montserrat: "montserrat", sans-serif;
+
+.navbar {
+  width: 100%;
+  min-height: 6vh;
+  display: flex;
+  flex-direction: row;
+  background-color: none;
+  transition: all 0.7s ease-in;
+  text-decoration: none;
+}
+
+.navigation {
+  align-items: baseline;
+  width: 100%;
+  height: auto;
+  font-family: $montserrat;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  a:hover {
+    color: rgb(192, 191, 191);
+  }
+  :visited {
+    color: #000000;
+  }
+  ul {
+    width: 25%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    :link {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .logo {
+    width: auto;
+    height: auto;
+    font-size: 34px;
+    font-family: $bodoni-moda;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    margin: 0 0 0 1%;
+    :hover {
+      color: rgb(192, 191, 191);
+    }
+  }
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
