@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@900&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
-$bodoni-moda: "bodoni-mota", serif;
-$montserrat: "montserrat", sans-serif;
+$roboto: "roboto";
 
 .navbar {
   width: 100%;
@@ -18,8 +16,10 @@ $montserrat: "montserrat", sans-serif;
   align-items: baseline;
   width: 100%;
   height: auto;
-  font-family: $montserrat;
-  font-size: 16px;
+  font-family: $roboto;
+  color: #706e6e;
+  font-weight: bold;
+  font-size: 18px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,26 +30,14 @@ $montserrat: "montserrat", sans-serif;
     color: #000000;
   }
   ul {
-    width: 25%;
+    width: 60%;
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    margin: 0 auto;
     :link {
       text-decoration: none;
       color: black;
-    }
-  }
-  .logo {
-    width: auto;
-    height: auto;
-    font-size: 34px;
-    font-family: $bodoni-moda;
-    font-weight: bold;
-    text-decoration: none;
-    color: #000000;
-    margin: 0 0 0 1%;
-    :hover {
-      color: rgb(192, 191, 191);
     }
   }
 }

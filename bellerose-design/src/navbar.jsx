@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import Logo from "./logo.jsx";
+import "./navbar.scss";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = React.useState(false);
@@ -24,45 +24,45 @@ const Navbar = () => {
 
   return (
     <>
+     <Logo />
       <header className={navbarClasses.join(" ")}>
         <Router>
           <nav className="navigation">
             <ul>
               <li>
-                <HashLink smooth to="./top-bar#top-bar">
+                <Link to="/">
                   HOME
-                </HashLink>
+                </Link>
               </li>
               <li>
-                <HashLink smooth to="/portfolio#portfolio">
+                <Link to="/interior-design">
                   INTERIOR DESIGN
-                </HashLink>
+                </Link>
               </li>
               <li>
-                <HashLink smooth to="/about/#about">
+                <Link to="/service-area">
                   SERVICE AREA
-                </HashLink>
+                </Link>
               </li>
               <li>
-                <HashLink smooth to="/featured-product/#featured-product">
+                <Link to="/featured-products">
                   FEATURED PRODUCTS
-                </HashLink>
+                </Link>
               </li>
               <li>
-                <HashLink smooth to="/about#about">
+                <Link to="/about">
                   ABOUT
-                </HashLink>
+                </Link>
               </li>
               <li>
-                <HashLink smooth to="/contact#contact">
+                <Link smooth to="/contact">
                   CONTACT
-                </HashLink>
+                </Link>
               </li>
             </ul>
           </nav>
         </Router>
       </header>
-      <Logo />
     </>
   );
 };
