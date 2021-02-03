@@ -1,4 +1,15 @@
-.button {
+.outer-button {
+    width: 380px;
+    height: 90px;
+    // background-color: white;
+  .button {
     width: 360px;
-    height: 85px;
+    height: 75px;
+    text-align: center;
+    margin: 1.4% auto 0 auto;
+    // border: 2px solid #7C904A;
+    .btn-text {
+      margin: 7.4% 0 0 0;
+    }
+  }
 }

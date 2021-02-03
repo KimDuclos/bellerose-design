@@ -52,6 +52,7 @@ $roboto: "roboto";
   display: flex;
   justify-content: center;
   flex-direction: row;
+  height: 632px;
   .content-1-2-left-photos {
     display: flex;
     flex-direction: row;
@@ -72,7 +73,31 @@ $roboto: "roboto";
       width: 90%;
     }
   }
-  .content1-2-right-section {
+  .content-1-2-right-section {
     width: 50%;
+  }
+}
+.yellow-block {
+  background-color: #f9f6de;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5% 0 5% 0;
+  .title {
+    font-family: $roboto;
+    font-size: 36px;
+  }
+  .subtitle {
+    font-family: $roboto;
+    font-size: 20px;
+  }
+  .paragraph {
+    font-style: $roboto;
+    font-weight: 225;
+    font-size: 18px;
+    width: 45%;
+    text-align: center;
   }
 }

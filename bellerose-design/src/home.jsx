@@ -29,7 +29,11 @@ const Home = () => {
           <Button
             className="content-1-1-btn"
             text="LEARN MORE"
-            style={{ backgroundColor: "white" }}
+            style={{
+              backgroundColor: "white",
+              color: "#7C904A",
+              fontWeight: "bolder",
+            }}
           />
         </div>
       </div>
@@ -55,13 +59,32 @@ const Home = () => {
               ofcomplimentary layers, the interior designs show their complex
               yet basic feel that can be enjoyed for manyyears to come.
             </div>
+            <Button
+              text="LEARN MORE"
+              style={{
+                backgroundColor: "#7C904A",
+                color: "#ffffff",
+                fontWeight: "bolder",
+              }}
+            />
           </div>
         </div>
         <div className="content-1-2-right-section">
           <img src="/images/photo-1-4.png" alt="interior-design" />
         </div>
-        <div className="content-1-3-left-section">
-          <img src="photo-1-5.png" alt="interior design" />
+      </div>
+      <div className="content-1-3-left-section">
+        <img src="/images/photo-1-5.png" alt="interior design" />
+      </div>
+      <div className="yellow-block">
+        <div className="title">WHAT WE DO</div>
+        <div className="subtitle">SERVICES AT BELLEROSE INTERIOR DESIGN</div>
+        <div className="paragraph">
+          Bellerose Interior Design starts with you and your visions of the
+          perfect space. From there, we use the latesttechnology to build that
+          dream from scratch. The design team will transform your living spaces
+          to reflect who you are and your New England lifestyle. From start to
+          finish, you will collaborate with the team to breakaway from boring.
         </div>
       </div>
     </div>
