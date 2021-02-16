@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+$roboto: "roboto";
+
+.footer {
+  .top-section {
+    height: 500px;
+    background-image: url("./assets/footer-pineapple-bg.png");
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    padding: 2% 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    hr {
+      width: 14%;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .info {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        width: 50%;
+        input {
+          color: #969393;
+          font-size: 18px;
+          font-family: $roboto;
+          border-radius: 4px;
+          font-weight: bold;
+          padding: .5% 0 .5% .5%;
+        }
+      }
+      .message {
+        margin: 1% 0 0 0;
+        display: flex;
+        justify-content: center;
+        input {
+          width: 45%;
+          border-radius: 4px;
+          font-size: 18px;
+          font-family: $roboto;
+          font-weight: bold;
+        }
+      }
+      .submit {
+        font-family: $roboto;
+        font-size: 20px;
+        margin: 2% 0 0 0;
+      }
+    }
+  }
+}

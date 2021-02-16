@@ -1,13 +1,21 @@
 import TopBar from "./top-bar.jsx";
 import Navbar from "./navbar.jsx";
-import Home from "./home.jsx";
+// import Home from "./home.jsx";
+// import InteriorDesign from "./interior-design.jsx";
+// import ServiceArea from "./service-area";
+import FeaturedProducts from "./featured-products.jsx";
+import Footer from "./footer.jsx";
 
 function App() {
   return (
     <>
       <TopBar />
       <Navbar />
-      <Home />
+      {/* <Home /> */}
+      {/* <InteriorDesign /> */}
+      {/* <ServiceArea /> */}
+      <FeaturedProducts />
+      <Footer />
     </>
   );
 }

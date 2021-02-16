@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+$roboto: "roboto";
+
+.top-section {
+    display: flex;
+    flex-direction: row;
+  .top-green-box {
+    height: 312px;
+    width: 1000px;
+    background-color: #7c904a;
+    color: white;
+    font-family: $roboto;
+    h1 {
+      padding: 5% 2% 0 2%;
+      font-size: 36px;
+    }
+    p {
+      padding: 0 2% 0 2%;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+    }
+  }
+}
+.photo-section {
+    max-width: 100%;
+    margin: 2% 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    img {
+        margin: .25%;
+    }
+    .kitchen {
+        width: 827px;
+        height: 549px;
+    }
+    .sunroom {
+        width: 571px;
+        height: 840px;
+    }
+    .lobby {
+        width: 471px;
+        height: 291px;
+    }
+    .bar {
+        width: 542px;
+        height: 825px;
+        margin: -15% -.4% 0 .2%;
+    }
+    .nook {
+        width: 274px;
+        height: 281px;
+        margin: -15% 0 0 1%;
+    }
+    .fancy-living-room {
+        width: 471px;
+        height: 654px;
+        margin: -28.4% 0 0 .5%;
+    }
+    .living-room {
+        width: 855px;
+        height: 532px;
+        margin: .4% 0 .4% -14.4%;
+    }
+    .music-area {
+        width: 471px;
+        height: 416px;
+        margin: -22.3% 0 0 74.6%;
+    }
+}

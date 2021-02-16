@@ -19,13 +19,9 @@ const Home = () => {
           </div>
           <p>
             For those who wish to live luxuriously, but with homey comforts that
-            won't
+            won't cost a fortune, Bellerose Interior Design creates custom
+            creations tailored to your lifestyle.
           </p>
-          <p>
-            cost a fortune, Bellerose Interior Design creates custom creations
-            tailored to
-          </p>
-          <p>your lifestyle.</p>
           <Button
             className="content-1-1-btn"
             text="LEARN MORE"
@@ -33,6 +29,7 @@ const Home = () => {
               backgroundColor: "white",
               color: "#7C904A",
               fontWeight: "bolder",
+              outlineColor: "#7C904A",
             }}
           />
         </div>
