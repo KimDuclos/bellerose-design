@@ -70,3 +70,18 @@ $roboto: "roboto";
         margin: -22.3% 0 0 74.6%;
     }
 }
+
+// hover effect
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
