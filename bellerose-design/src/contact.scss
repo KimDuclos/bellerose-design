@@ -26,14 +26,13 @@ $roboto: "roboto";
 .main-text {
     width: 50%;
     font-family: $roboto;
-    font-weight: bold;
     margin: 4% auto;
-    text-align: center;
     p {
-        font-size: 36px;
-        font-weight: bold;
+        line-height: 30px;
+        font-size: 18px;
+        font-weight: bolder;
     }
-    .final-line {
+    .final-paragraph {
       margin: 4% 0 8% 0;
     }
 }
