@@ -15,8 +15,8 @@ const ServiceArea = () => {
             of you and your chosen part of the country.
           </p>
         </div>
-        <img src="/images/photo-3-1.png" alt="interior design image" />
-        <img src="/images/photo-3-2.png" alt="interior design image" />
+        <img src="/images/photo-3-1.png" alt="living room" />
+        <img src="/images/photo-3-2.png" alt="office" />
       </div>
       <div className="main-text">
         <h1>A New England Home from an Experienced Team</h1>

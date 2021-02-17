@@ -1,7 +1,12 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import Logo from "./logo.jsx";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./navbar.scss";
+import Home from "./home.jsx";
+import InteriorDesign from "./interior-design.jsx";
+import ServiceArea from "./service-area.jsx";
+import FeaturedProducts from "./featured-products.jsx";
+import About from "./about.jsx";
+import Contact from "./contact.jsx";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = React.useState(false);
@@ -23,47 +28,54 @@ const Navbar = () => {
   }
 
   return (
-    <>
-     <Logo />
+    <Router>
       <header className={navbarClasses.join(" ")}>
-        <Router>
-          <nav className="navigation">
-            <ul>
-              <li>
-                <Link to="/">
-                  HOME
-                </Link>
-              </li>
-              <li>
-                <Link to="/interior-design">
-                  INTERIOR DESIGN
-                </Link>
-              </li>
-              <li>
-                <Link to="/service-area">
-                  SERVICE AREA
-                </Link>
-              </li>
-              <li>
-                <Link to="/featured-products">
-                  FEATURED PRODUCTS
-                </Link>
-              </li>
-              <li>
-                <Link to="/about">
-                  ABOUT
-                </Link>
-              </li>
-              <li>
-                <Link smooth to="/contact">
-                  CONTACT
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </Router>
+        <nav className="navigation">
+          <ul>
+            <li>
+              <Link to="/">HOME</Link>
+            </li>
+            <li>
+              <Link to="/interior-design">INTERIOR DESIGN</Link>
+            </li>
+            <li>
+              <Link to="/service-area">SERVICE AREA</Link>
+            </li>
+            <li>
+              <Link to="/featured-products">FEATURED PRODUCTS</Link>
+            </li>
+            <li>
+              <Link to="/about">ABOUT</Link>
+            </li>
+            <li>
+              <Link smooth to="/contact">
+                CONTACT
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </header>
-    </>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/interior-design">
+          <InteriorDesign />
+        </Route>
+        <Route path="/service-area">
+          <ServiceArea />
+        </Route>
+        <Route path="/featured-products">
+          <FeaturedProducts />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 
