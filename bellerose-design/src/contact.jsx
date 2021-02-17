@@ -1,6 +1,7 @@
 import React from "react";
-import "./about.scss";
+import "./contact.scss";
 import Button from "./button.jsx";
+import { HashLink } from "react-router-hash-link";
 
 const Contact = () => {
   return (
@@ -18,18 +19,22 @@ const Contact = () => {
         <img src="/images/photo-6-1.png" alt="kitchen" />
         <img src="/images/photo-6-2.png" alt="TV room" />
       </div>
-      <div className="main-text">
-        <p>Boston - Manchester - Providence</p>
-        <p>Monday - Friday 9am - 5pm</p>
-        <p className="final-line">By Appointment Only</p>
-        <Button
-          text="BOOK A CONSULTATION"
-          style={{
-            backgroundColor: "#7C904A",
-            color: "white",
-            fontWeight: "bolder",
-          }}
-        />
+      <div className="bottom-section">
+        <div className="contact-text">
+          <p>Boston - Manchester - Providence</p>
+          <p>Monday - Friday 9am - 5pm</p>
+          <p className="final-line">By Appointment Only</p>
+        </div>
+        <HashLink to="#form">
+          <Button
+            className="consultation-button"
+            text="BOOK A CONSULTATION"
+            style={{
+              backgroundColor: "#7C904A",
+              color: "white",
+            }}
+          />
+        </HashLink>
       </div>
     </div>
   );

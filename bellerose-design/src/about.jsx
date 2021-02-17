@@ -1,6 +1,7 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import "./about.scss";
-import Button from "./button.jsx"
+import Button from "./button.jsx";
 
 const About = () => {
   return (
@@ -15,12 +16,12 @@ const About = () => {
             of you and your chosen part of the country.
           </p>
         </div>
-        <img src="/images/photo-5-1.png" alt="interior design image" />
-        <img src="/images/photo-5-2.png" alt="interior design image" />
+        <img src="/images/photo-5-1.png" alt="living room" />
+        <img src="/images/photo-5-2.png" alt="office" />
       </div>
       <div className="main-text">
         <h1>Skilled and Practiced Team</h1>
-        <p>
+        <p className="about-paragraph">
           The Bellerose Team is a talented group of interior designers who bring
           a professional approach to design withmodern aesthetics with an
           ability to make the client’s true style come out. The team uses a
@@ -28,28 +29,30 @@ const About = () => {
           every living area they influence to reach even the most challenging
           design goals.
         </p>
-        <p>
+        <p className="about-paragraph">
           As a group of New England natives, the Bellerose Team has been
           converting living spaces for more than 30 years. With deep passions
           and strong educational backgrounds, the team equally loves the
           constant change of design.
         </p>
         <h1>Confident and Caring Influence</h1>
-        <p className="final-paragraph">
+        <p className="final-paragraph about-paragraph">
           The Bellerose Team will evaluate and analyze your lifestyle
           requirements. All of the Bellerose designers are experts in Sketchup
           3-D Modeling to show you the design before any real world changes are
           made. The team will work with you toadjust the design as the project
           moves along.
         </p>
-        <Button
-          text="BOOK A CONSULTATION"
-          style={{
-            backgroundColor: "#7C904A",
-            color: "white",
-            fontWeight: "bolder",
-          }}
-        />
+        <HashLink to="#form">
+          <Button
+            text="BOOK A CONSULTATION"
+            style={{
+              backgroundColor: "#7C904A",
+              color: "white",
+              fontWeight: "bolder",
+            }}
+          />
+        </HashLink>
       </div>
     </div>
   );

@@ -35,6 +35,9 @@ $roboto: "roboto";
         margin: 5% auto;
         text-align: center;
       }
+      a:link {
+        text-decoration: none;
+      }
     }
   }
   .gray-divider {
@@ -53,6 +56,9 @@ $roboto: "roboto";
   justify-content: center;
   flex-direction: row;
   height: 632px;
+  a:link {
+    text-decoration: none;
+  }
   .content-1-2-left-photos {
     display: flex;
     flex-direction: row;

@@ -23,16 +23,20 @@ $roboto: "roboto";
     }
   }
 }
-.main-text {
-    width: 50%;
+.contact-text {
     font-family: $roboto;
-    margin: 4% auto;
-    p {
-        line-height: 30px;
-        font-size: 18px;
-        font-weight: bolder;
-    }
-    .final-paragraph {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 4% auto 10% auto;
+    text-align: center;
+    .final-line {
       margin: 4% 0 8% 0;
     }
 }
+.bottom-section {
+  margin: 0 0 8% 0;
+  a:link {
+    text-decoration: none;
+  }
+}
+

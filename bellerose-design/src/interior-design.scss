@@ -27,10 +27,10 @@ $roboto: "roboto";
     width: 50%;
     font-family: $roboto;
     margin: 4% auto;
-    p {
+    text-align: left !important;
+    .it-paragraph {
         line-height: 30px;
         font-size: 18px;
-        font-weight: bolder;
     }
     ul {
         line-height: 30px;
@@ -38,5 +38,8 @@ $roboto: "roboto";
     }
     .final-paragraph {
       margin: 0 0 8% 0;
+    }
+    a:link {
+      text-decoration: none;
     }
 }

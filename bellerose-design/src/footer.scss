@@ -23,16 +23,16 @@ $roboto: "roboto";
       .info {
         margin: 0 auto;
         display: flex;
-        justify-content: center;
-        justify-content: space-evenly;
-        width: 50%;
+        justify-content: space-between;
+        width: 45%;
         input {
           color: #969393;
           font-size: 18px;
           font-family: $roboto;
           border-radius: 4px;
           font-weight: bold;
-          padding: .5% 0 .5% .5%;
+          padding: 0.5% 0 0.5% 0.5%;
+          width: 30%;
         }
       }
       .message {
@@ -46,11 +46,110 @@ $roboto: "roboto";
           font-family: $roboto;
           font-weight: bold;
         }
+        textarea {
+          width: 45%;
+          border-radius: 4px;
+          font-size: 18px;
+          font-family: $roboto;
+          font-weight: bold;
+        }
       }
       .submit {
         font-family: $roboto;
         font-size: 20px;
         margin: 2% 0 0 0;
+      }
+    }
+  }
+  .bottom-section {
+    background-color: #7c904a;
+    max-width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2% 2%;
+    .review-section {
+      width: 20%;
+      margin: 0 0 0 10%;
+      .review-title {
+        font-family: $roboto;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .review {
+        font-family: $roboto;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      .reviewer-name {
+        font-family: $roboto;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+  .sitemap-section {
+    text-align: center;
+    .sitemap-title {
+      font-family: $roboto;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .sitemap-list {
+      font-family: $roboto;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  .service-contact-section {
+    text-align: center;
+    margin: 1% 10% 0 0;
+    .service-section-title {
+      font-family: $roboto;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .service-areas {
+      font-family: $roboto;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  .contact-section {
+    .contact-title {
+      font-family: $roboto;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 14% 0 0 0;
+    }
+    .contact-info {
+      font-family: $roboto;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  .footer-bottom {
+    max-width: 100%;
+    height: auto;
+    background-color: #393939;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin: .4% 0 0 0;
+      .icon {
+        height: 70%;
+        width: 40px;
+        .instagram {
+          height: 50%;
+        }
       }
     }
   }

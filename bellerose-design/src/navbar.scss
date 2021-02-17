@@ -10,6 +10,7 @@ $roboto: "roboto";
   background-color: none;
   transition: all 0.7s ease-in;
   text-decoration: none;
+  padding-top: 1.5%;
 }
 
 .navigation {
@@ -47,4 +48,8 @@ $roboto: "roboto";
   top: 0;
   left: 0;
   background-color: white;
+}
+
+Link {
+  transition: all 2s;
 }

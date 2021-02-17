@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { ScrolltoTop } from "react-router-dom";
 import "./navbar.scss";
 import Home from "./home.jsx";
 import InteriorDesign from "./interior-design.jsx";
@@ -7,6 +8,7 @@ import ServiceArea from "./service-area.jsx";
 import FeaturedProducts from "./featured-products.jsx";
 import About from "./about.jsx";
 import Contact from "./contact.jsx";
+import ScrollToTop from "./scrolltotop.jsx";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = React.useState(false);
@@ -29,6 +31,7 @@ const Navbar = () => {
 
   return (
     <Router>
+      <ScrollToTop />
       <header className={navbarClasses.join(" ")}>
         <nav className="navigation">
           <ul>

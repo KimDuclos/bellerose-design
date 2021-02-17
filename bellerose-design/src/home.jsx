@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "./button.jsx";
 import "./home.scss";
+import { HashLink } from "react-router-hash-link";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="content-1-1-section">
         <img
           className="photo-1-1"
@@ -22,16 +23,19 @@ const Home = () => {
             won't cost a fortune, Bellerose Interior Design creates custom
             creations tailored to your lifestyle.
           </p>
-          <Button
-            className="content-1-1-btn"
-            text="LEARN MORE"
-            style={{
-              backgroundColor: "white",
-              color: "#7C904A",
-              fontWeight: "bolder",
-              outlineColor: "#7C904A",
-            }}
-          />
+          <HashLink to="#form">
+            <Button
+              className="content-1-1-btn"
+              target="form"
+              text="BOOK A CONSULTATION"
+              style={{
+                backgroundColor: "white",
+                color: "#7C904A",
+                fontWeight: "bolder",
+                outlineColor: "#7C904A",
+              }}
+            />
+          </HashLink>
         </div>
       </div>
 
@@ -56,14 +60,16 @@ const Home = () => {
               ofcomplimentary layers, the interior designs show their complex
               yet basic feel that can be enjoyed for manyyears to come.
             </div>
-            <Button
-              text="LEARN MORE"
-              style={{
-                backgroundColor: "#7C904A",
-                color: "#ffffff",
-                fontWeight: "bolder",
-              }}
-            />
+            <HashLink to="#form">
+              <Button
+                text="BOOK A CONSULTATION"
+                style={{
+                  backgroundColor: "#7C904A",
+                  color: "#ffffff",
+                  fontWeight: "bolder",
+                }}
+              />
+            </HashLink>
           </div>
         </div>
         <div className="content-1-2-right-section">

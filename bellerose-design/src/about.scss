@@ -29,8 +29,9 @@ $roboto: "roboto";
     font-weight: bold;
     margin: 4% auto;
     text-align: center;
-    p {
-        font-size: 36px;
+    .about-paragraph {
+        font-size: 18px;
+        line-height: 30px;
         font-weight: bold;
     }
     .final-line {
