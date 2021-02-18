@@ -2,14 +2,16 @@
 
 .top-bar {
   background-color: #706e6e;
-  width: 100%;
+  max-width: 100%;
   height: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1% 8% 0 8%;
   .search-box {
     background-color: #ffffff;
-    width: 280px;
+    width: 15%;
     height: 30px;
     color: #999999;
     font-weight: bold;
@@ -18,16 +20,10 @@
     padding: 0 0 0 0.4%;
     font-family: "Roboto", sans-serif;
     font-size: 12px;
-    margin: .45% 50% 0 0;
-    .fa-search {
-      width: 100px;
-      height: 100px;
-    }
   }
   .locations {
     color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    margin: .60% 0 0 0;
   }
 }

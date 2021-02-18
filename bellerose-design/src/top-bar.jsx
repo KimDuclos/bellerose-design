@@ -1,8 +1,5 @@
 import React from "react";
 import "./top-bar.scss";
-// import { FontAwesomeIcon } from "@fo@fortawesome/react-fontawesome";
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-
 
 const TopBar = () => {
   return (
