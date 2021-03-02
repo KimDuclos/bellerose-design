@@ -6,10 +6,10 @@ import { HashLink } from "react-router-hash-link";
 const InteriorDesign = () => {
   return (
     <div className="interior-design">
-      <div className="top-section">
+      <div className="it-top-section">
         <div className="top-green-box">
-          <h1>Interior Design with Comfort and Compassion</h1>
-          <p className="it-paragraph">
+          <h1 className="green-box-title">Interior Design with Comfort and Compassion</h1>
+          <p className="green-box-text" >
             From our first consultation to project completion, The Bellerose
             Team’s professional design techniques will contribute to outstanding
             results for your home. With collectively over 20 years of interior
@@ -18,16 +18,16 @@ const InteriorDesign = () => {
             Manchester or Providence home will stand out among the rest.
           </p>
         </div>
-        <img src="/images/photo-2-1.png" alt="living room" />
-        <img src="/images/photo-2-2.png" alt="kitchen" />
+        <img className="living-room" src="/images/photo-2-1.png" alt="living room" />
+        <img className="kitchen" src="/images/photo-2-2.png" alt="kitchen" />
       </div>
-      <div className="main-text">
+      <div className="it-main-text">
         <p className="it-paragraph">
           From simple room redesigns to complete home remodels, Bellerose
           Interior Design offers a wide selection of interior design and
           products to guarantee a wonderful project experiene.{" "}
         </p>
-        <h1>The Interior Design Procedure</h1>
+        <h1 className="it-main-title">The Interior Design Procedure</h1>
         <h2>Goal-Oriented Design</h2>
         <p className="it-paragraph">
           The Bellerose Team will evaluate and analyze your lifestyle

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
+$size1000: 1000px;
+$size800: 800px;
+
+
 .top-bar {
   background-color: #706e6e;
   max-width: 100%;
@@ -9,6 +13,12 @@
   justify-content: space-between;
   align-items: baseline;
   padding: 1% 8% 0 8%;
+  @media (max-width: $size1000) {
+    max-width: 1000px;
+  }
+  @media (max-width: $size800) {
+    max-width: 800px;
+  }
   .search-box {
     background-color: #ffffff;
     width: 15%;
@@ -20,6 +30,10 @@
     padding: 0 0 0 0.4%;
     font-family: "Roboto", sans-serif;
     font-size: 1em;
+    @media (max-width: $size1000) {
+      width: 25%;
+      padding: 0 0 0 1%;
+    }
   }
   .locations {
     color: #ffffff;

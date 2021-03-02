@@ -6,10 +6,10 @@ import Button from "./button.jsx";
 const About = () => {
   return (
     <div className="about">
-      <div className="top-section">
-        <div className="top-green-box">
-          <h1>Interior Design in Boston, Manchester and Providence</h1>
-          <p>
+      <div className="about-top-section">
+        <div className="about-top-green-box">
+          <h1 className="about-green-box-title">Interior Design in Boston, Manchester and Providence</h1>
+          <p className="about-green-box-paragraph">
             Modern living in New England offers so much potential to homeowners.
             Bellerose Interior Designworks with your sense of style, local flair
             and professional techniques to make sure your home is a reflection
@@ -17,9 +17,9 @@ const About = () => {
           </p>
         </div>
         <img src="/images/photo-5-1.png" alt="living room" />
-        <img src="/images/photo-5-2.png" alt="office" />
+        <img className="about-office" src="/images/photo-5-2.png" alt="office" />
       </div>
-      <div className="main-text">
+      <div className="about-main-text">
         <h1>Skilled and Practiced Team</h1>
         <p className="about-paragraph">
           The Bellerose Team is a talented group of interior designers who bring

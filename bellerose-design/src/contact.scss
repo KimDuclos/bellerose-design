@@ -2,24 +2,73 @@
 
 $roboto: "roboto";
 
+$size1500: 1500px;
+$size1000: 1000px;
+$size800: 800px;
+$size500: 500px;
+
 .top-section {
     display: flex;
     flex-direction: row;
+    @media (max-width: $size1500) {
+      max-width: 1500;
+    }
+    @media (max-width: $size1000) {
+      max-width: 1000px;
+    }
+    @media (max-width: $size500) {
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+    .contact-tv-room {
+      @media (max-width: $size1000) {
+        display: none;
+      }
+    }
   .top-green-box {
     height: 312px;
     width: 1000px;
     background-color: #7c904a;
     color: white;
     font-family: $roboto;
-    h1 {
+    @media (max-width: $size1500) {
+      width: 80%;
+    }
+    @media (max-width: $size800) {
+      width: 100%;
+    }
+    @media (max-width: $size500) {
+      height: auto;
+    }
+    .contact-green-box-title {
       padding: 5% 2% 0 2%;
       font-size: 36px;
+      @media (max-width: $size1500) {
+        font-size: 1.7em;
+        padding: 0% 0 0 2%;
+      }
+      @media (max-width: $size1000) {
+        padding: 4% 0 0 2%;
+      }
+      @media (max-width: $size800) {
+        font-size: 1.5em;
+      }
+      @media (max-width: $size500) {
+        margin: 4% 0 0 0;
+      }
     }
-    p {
+    .contact-green-paragraph {
       padding: 0 2% 0 2%;
       font-size: 20px;
       font-weight: 600;
       line-height: 30px;
+      @media (max-width: $size1500) {
+        font-size: 1.15em;
+      }
+      @media (max-width: $size800) {
+        font-size: 0.88em;
+      }
     }
   }
 }

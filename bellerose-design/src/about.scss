@@ -2,39 +2,98 @@
 
 $roboto: "roboto";
 
-.top-section {
+$size1500: 1500px;
+$size1000: 1000px;
+$size800: 800px;
+$size500: 500px;
+
+.about-top-section {
     display: flex;
     flex-direction: row;
-  .top-green-box {
+    @media (max-width: $size1500) {
+      max-width: 1500;
+    }
+    @media (max-width: $size1000) {
+      max-width: 1000px;
+    }
+    @media (max-width: $size500) {
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+    .about-office {
+      @media (max-width: $size1000) {
+        display: none;
+      }
+    }
+  .about-top-green-box {
     height: 312px;
     width: 1000px;
     background-color: #7c904a;
     color: white;
     font-family: $roboto;
-    h1 {
+    @media (max-width: $size1500) {
+      width: 80%;
+    }
+    @media (max-width: $size800) {
+      width: 100%;
+    }
+    @media (max-width: $size500) {
+      height: auto;
+    }
+    .about-green-box-title {
       padding: 5% 2% 0 2%;
       font-size: 36px;
+      @media (max-width: $size1500) {
+        font-size: 1.7em;
+      }
+      @media (max-width: $size800) {
+        font-size: 1.5em;
+      }
+      @media (max-width: $size500) {
+        margin: 4% 0 0 0;
+      }
     }
-    p {
+    .about-green-box-paragraph {
       padding: 0 2% 0 2%;
       font-size: 20px;
       font-weight: 600;
       line-height: 30px;
+      @media (max-width: $size1500) {
+        font-size: 1.15em;
+      }
+      @media (max-width: $size800) {
+        font-size: 0.88em;
+      }
     }
   }
 }
-.main-text {
+.about-main-text {
     width: 50%;
     font-family: $roboto;
     font-weight: bold;
     margin: 4% auto;
     text-align: center;
+    a:link {
+      text-decoration: none;
+    }
+    @media (max-width: $size1000) {
+      width: 80%;
+    }
+    @media (max-width: $size500) {
+      width: 75%;
+    }
+    .sa-title {
+      @media (max-width: $size1000) {
+        font-size: 1.8em;
+      }
+    }
     .about-paragraph {
         font-size: 18px;
         line-height: 30px;
         font-weight: bold;
     }
-    .final-line {
+    .about-final-paragraph {
       margin: 4% 0 8% 0;
     }
 }

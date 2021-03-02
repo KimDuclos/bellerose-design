@@ -2,37 +2,108 @@
 
 $roboto: "roboto";
 
-.top-section {
+$size1500: 1500px;
+$size1000: 1000px;
+$size800: 800px;
+$size500: 500px;
+
+.sa-top-section {
+  display: flex;
+  flex-direction: row;
+  @media (max-width: $size1500) {
+    max-width: 1500;
+  }
+  @media (max-width: $size1000) {
+    max-width: 1000px;
+  }
+  @media (max-width: $size500) {
     display: flex;
-    flex-direction: row;
-  .top-green-box {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .sa-top-green-box {
     height: 312px;
     width: 1000px;
     background-color: #7c904a;
     color: white;
     font-family: $roboto;
+    @media (max-width: $size1500) {
+      width: 80%;
+    }
+    @media (max-width: $size800) {
+      width: 100%;
+    }
+    @media (max-width: $size500) {
+      height: auto;
+    }
+    .sa-green-box-title {
+      padding: 0% 2% 0 2%;
+      font-size: 2em;
+      @media (max-width: $size1500) {
+        font-size: 1.7em;
+      }
+      @media (max-width: $size800) {
+        font-size: 1.5em;
+      }
+      @media (max-width: $size500) {
+        margin: 4% 0 0 0;
+      }
+    }
     h1 {
       padding: 5% 2% 0 2%;
-      font-size: 36px;
+      font-size: 2em;
+      @media (max-width: $size1000) {
+        margin: 9% 0 0 0;
+      }
     }
-    p {
+    .sa-green-paragraph {
       padding: 0 2% 0 2%;
-      font-size: 20px;
+      font-size: 1.5em;
       font-weight: 600;
-      line-height: 30px;
+      line-height: 2em;
+      @media (max-width: $size1500) {
+        font-size: 1.15em;
+      }
+      @media (max-width: $size800) {
+        font-size: 0.88em;
+      }
+    }
+  }
+  .office {
+    @media (max-width: $size800) {
+      display: none;
+    }
+  }
+  .office {
+    @media (max-width: $size1000) {
+      display: none;
     }
   }
 }
-.main-text {
-    width: 50%;
-    font-family: $roboto;
-    margin: 4% auto;
-    .sa-paragraph {
-        line-height: 30px;
-        font-size: 18px;
-        font-weight: bolder;
+.sa-main-text {
+  width: 50%;
+  font-family: $roboto;
+  margin: 4% auto;
+  a:link {
+    text-decoration: none;
+  }
+  @media (max-width: $size1000) {
+    width: 80%;
+  }
+  @media (max-width: $size500) {
+    width: 75%;
+  }
+  .sa-title {
+    @media (max-width: $size1000) {
+      font-size: 1.8em;
     }
-    .final-paragraph {
-      margin: 4% 0 8% 0;
-    }
+  }
+  .sa-paragraph {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  .final-paragraph {
+    margin: 4% 0 8% 0;
+  }
 }

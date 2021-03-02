@@ -6,21 +6,21 @@ import { HashLink } from "react-router-hash-link";
 const ServiceArea = () => {
   return (
     <div className="service-area">
-      <div className="top-section">
-        <div className="top-green-box">
-          <h1>Interior Design in Boston, Manchester and Providence</h1>
-          <p className="sa-paragraph">
+      <div className="sa-top-section">
+        <div className="sa-top-green-box">
+          <h1 className="sa-green-box-title">New England Style Interior Design</h1>
+          <p className="sa-green-paragraph">
             Modern living in New England offers so much potential to homeowners.
             Bellerose Interior Designworks with your sense of style, local flair
             and professional techniques to make sure your home is a reflection
             of you and your chosen part of the country.
           </p>
         </div>
-        <img src="/images/photo-3-1.png" alt="living room" />
-        <img src="/images/photo-3-2.png" alt="office" />
+        <img className="liv-room" src="/images/photo-3-1.png" alt="living room" />
+        <img className="office" src="/images/photo-3-2.png" alt="office" />
       </div>
-      <div className="main-text">
-        <h1>A New England Home from an Experienced Team</h1>
+      <div className="sa-main-text">
+        <h1 className="sa-title">A New England Home from an Experienced Team</h1>
         <p className="sa-paragraph">
           Bring the beauty of New England into your home with Bellerose Interior
           Design. Serving the Boston, Manchesterand Providence areas, the design

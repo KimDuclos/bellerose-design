@@ -7,8 +7,8 @@ const FeaturedProducts = () => {
       <div className="top-section">
         <img src="/images/photo-4-1.png" alt="interior design" />
         <div className="top-green-box">
-          <h1>Interior Design in Boston, Manchester and Providence</h1>
-          <p>
+          <h1 className="fi-top-green-title">Interior Design in Boston, Manchester and Providence</h1>
+          <p className="fi-top-green-paragraph">
             Modern living in New England offers so much potential to homeowners.
             Bellerose Interior Designworks with your sense of style, local flair
             and professional techniques to make sure your home is a reflection

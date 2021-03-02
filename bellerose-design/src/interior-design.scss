@@ -2,44 +2,88 @@
 
 $roboto: "roboto";
 
-.top-section {
+$size1500: 1500px;
+$size1000: 1000px;
+$size800: 800px;
+$size500: 500px;
+
+.it-top-section {
+  display: flex;
+  flex-direction: row;
+  @media (max-width: $size1000) {
+    max-width: 1000px;
+  }
+  @media (max-width: $size500) {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
   .top-green-box {
-    height: 312px;
-    width: 1000px;
+    width: 50%;
     background-color: #7c904a;
     color: white;
     font-family: $roboto;
-    h1 {
-      padding: 5% 2% 0 2%;
-      font-size: 36px;
+    @media (max-width: $size1500) {
+      width: 80%;
     }
-    p {
+    @media (max-width: $size800) {
+      width: 100%;
+    }
+    .green-box-title {
+      padding: 0% 2% 0 2%;
+      font-size: 2em;
+      @media (max-width: $size1500) {
+        font-size: 1.7em;
+      }
+      @media (max-width: $size800) {
+        font-size: 1.5em;
+      }
+    }
+    .green-box-text {
       padding: 0 2% 0 2%;
-      font-size: 20px;
+      font-size: 1.2em;
       font-weight: 600;
-      line-height: 30px;
+      line-height: 1.8em;
+      @media (max-width: $size1500) {
+        font-size: 1.15em;
+      }
+      @media (max-width: $size800) {
+        font-size: .88em;
+      }
+    }
+  }
+  .kitchen {
+    @media (max-width: $size1000) {
+      display: none;
+    }
+    @media (max-width: $size800) {
+      display: none;
     }
   }
 }
-.main-text {
-    width: 50%;
-    font-family: $roboto;
-    margin: 4% auto;
-    text-align: left !important;
-    .it-paragraph {
-        line-height: 30px;
-        font-size: 18px;
-    }
-    ul {
-        line-height: 30px;
-        font-weight: bolder;
-    }
-    .final-paragraph {
-      margin: 0 0 8% 0;
-    }
-    a:link {
-      text-decoration: none;
-    }
+.it-main-text {
+  width: 50%;
+  font-family: $roboto;
+  margin: 4% auto;
+  text-align: left !important;
+  @media (max-width: $size500) {
+    width: 75%;
+  }
+  .it-main-title {
+    text-align: center;
+  }
+  .it-paragraph {
+    line-height: 30px;
+    font-size: 1.15em;
+  }
+  ul {
+    line-height: 2em;
+    font-weight: bolder;
+  }
+  .final-paragraph {
+    margin: 0 0 8% 0;
+  }
+  a:link {
+    text-decoration: none;
+  }
 }

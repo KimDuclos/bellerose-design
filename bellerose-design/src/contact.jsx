@@ -8,8 +8,8 @@ const Contact = () => {
     <div className="contact">
       <div className="top-section">
         <div className="top-green-box">
-          <h1>Interior Design in Boston, Manchester and Providence</h1>
-          <p>
+          <h1 className="contact-green-box-title">Interior Design in Boston, Manchester and Providence</h1>
+          <p className="contact-green-paragraph">
             Modern living in New England offers so much potential to homeowners.
             Bellerose Interior Designworks with your sense of style, local flair
             and professional techniques to make sure your home is a reflection
@@ -17,7 +17,7 @@ const Contact = () => {
           </p>
         </div>
         <img src="/images/photo-6-1.png" alt="kitchen" />
-        <img src="/images/photo-6-2.png" alt="TV room" />
+        <img className="contact-tv-room" src="/images/photo-6-2.png" alt="TV room" />
       </div>
       <div className="bottom-section">
         <div className="contact-text">

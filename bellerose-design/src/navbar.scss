@@ -2,6 +2,9 @@
 
 $roboto: "roboto";
 
+$size1000: 1000px;
+$size800: 800px;
+
 .navbar {
   width: 100%;
   min-height: 6vh;
@@ -24,6 +27,9 @@ $roboto: "roboto";
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: $size800) {
+    font-size: .8em;
+  }
   a:hover {
     color: rgb(192, 191, 191);
   }
@@ -36,20 +42,30 @@ $roboto: "roboto";
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
+    @media (max-width: $size1000) {
+      margin: 0 auto;
+      padding: 0 0 1% 0;
+      width: 80%;
+      align-self: center;
+    }
+    @media (max-width: $size800) {
+      margin: 0 auto;
+      padding: 0%;
+      width: 80%;
+      align-self: center;
+    }
     :link {
       text-decoration: none;
       color: black;
     }
   }
 }
-
 .scrolled {
   position: fixed;
   top: 0;
   left: 0;
   background-color: white;
 }
-
 Link {
   transition: all 2s;
 }

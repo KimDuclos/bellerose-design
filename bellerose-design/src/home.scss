@@ -2,13 +2,33 @@
 
 $roboto: "roboto";
 
+$size1000: 1000px;
+$size800: 800px;
+$size500: 500px;
+
 .home {
   .content-1-1-section {
     background-color: #7c904a;
     display: flex;
     flex-direction: row;
-    .page-1-1 {
-      width: 54.8%;
+    width: 100%;
+    @media (max-width: $size1000) {
+      height: 300px;
+    }
+    @media (max-width: $size500) {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      padding: 0 0 2% 0;
+    }
+    .photo-1-1 {
+      max-width: 54.8%;
+      @media (max-width: $size1000) {
+        max-width: 50%;
+      }
+      @media (max-width: $size500) {
+        max-width: 100%;
+      }
     }
     .content-1-1 {
       color: white;
@@ -18,22 +38,40 @@ $roboto: "roboto";
       align-items: center;
       margin: auto auto;
       h1 {
-        font-size: 36px;
+        font-size: 2em;
+        align-self: center;
+        @media (max-width: $size1000) {
+          font-size: 1.8em;
+        }
+        @media (max-width: $size800) {
+          font-size: 1.6em;
+        }
       }
       h5 {
-        font-size: 18px;
+        font-size: 1.4em;
         margin: 5% auto;
+        @media (max-width: $size1000) {
+          font-size: 1.2em;
+          margin: 0% 0 4% 0;
+        }
+        @media (max-width: $size800) {
+          font-size: 1.1em;
+        }
       }
       .divider {
         margin: -5% 0 0 0;
       }
       p {
-        font-size: 20px;
+        font-size: 1.2em;
         font-weight: 500;
         margin: 2% 0 0 0;
         width: 70%;
         margin: 5% auto;
         text-align: center;
+        @media (max-width: $size1000) {
+          font-size: 1em;
+          margin: 1% 0 2% 0;
+        }
       }
       a:link {
         text-decoration: none;
@@ -45,54 +83,98 @@ $roboto: "roboto";
     height: 80px;
     background-color: #706e6e;
     color: white;
-    font-size: 18px;
+    font-size: 1.2em;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: $size1000) {
+      font-size: 1em;
+      height: 50px;
+    }
   }
 }
 .content-1-2-section {
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  height: 632px;
+  height: auto;
+  max-width: 100%;
+  @media (max-width: $size1000) {
+    padding: 0 0 2% 0;
+  }
   a:link {
     text-decoration: none;
   }
-  .content-1-2-left-photos {
-    display: flex;
-    flex-direction: row;
-  }
-  .content-1-2-left-text {
-    font-family: $roboto;
-    display: flex;
-    flex-direction: column;
-    margin: 5% 0 0 0;
-    .title {
-      font-size: 36px;
-      margin: 0 auto 1% 6%;
-      text-align: left;
+  .content-1-2-left-section {
+    max-width: 55%;
+    @media (max-width: $size1000) {
+      max-width: 100%;
+      text-align: center;
     }
-    .paragraph {
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 2;
-      margin: 0 auto 5% 6%;
-      width: 90%;
+
+    .content-1-2-left-photos {
+      display: flex;
+      flex-direction: row;
+      @media (max-width: $size1000) {
+        width: 1000px;
+      }
+      .left-photos {
+        @media (max-width: $size1000) {
+          width: 50%;
+        }
+      }
+      .blue-library {
+        @media (max-width: $size500) {
+          display: none;
+        }
+      }
+    }
+    .content-1-2-left-text {
+      font-family: $roboto;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      max-width: 90%;
+      padding: 3% 0 0 3%;
+      @media (max-width: $size1000) {
+        max-width: 100%;
+        padding: 2%;
+      }
+      .title {
+        font-size: 2em;
+        text-align: left;
+        @media (max-width: $size1000) {
+          text-align: center;
+        }
+      }
+      .paragraph {
+        font-size: 1em;
+        line-height: 2;
+        margin: 0 0 2% 0;
+      }
     }
   }
   .content-1-2-right-section {
-    width: 50%;
+    img {
+      max-width: 100%;
+    }
+    .bed-photo {
+      @media (max-width: $size1000) {
+        display: none;
+      }
+    }
   }
 }
 .yellow-block {
   background-color: #f9f6de;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 5% 0 5% 0;
+  margin: -0.1% 0 0 0;
+  z-index: 10;
+
   .title {
     font-family: $roboto;
     font-size: 36px;
@@ -100,6 +182,8 @@ $roboto: "roboto";
     margin: 0 0 0.5% 0;
   }
   .subtitle {
+    width: 400px;
+    text-align: center;
     font-family: $roboto;
     font-size: 20px;
     font-weight: bold;
@@ -112,5 +196,8 @@ $roboto: "roboto";
     width: 45%;
     text-align: center;
     line-height: 1.5em;
+    @media (max-width: $size1000) {
+      width: 90%;
+    }
   }
 }
