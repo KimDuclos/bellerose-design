@@ -37,11 +37,8 @@ $size500: 500px;
       height: auto;
     }
     .sa-green-box-title {
-      padding: 0% 2% 0 2%;
+      padding: 4.5% 2% 0 2%;
       font-size: 2em;
-      @media (max-width: $size1500) {
-        font-size: 1.7em;
-      }
       @media (max-width: $size800) {
         font-size: 1.5em;
       }
@@ -49,16 +46,9 @@ $size500: 500px;
         margin: 4% 0 0 0;
       }
     }
-    h1 {
-      padding: 5% 2% 0 2%;
-      font-size: 2em;
-      @media (max-width: $size1000) {
-        margin: 9% 0 0 0;
-      }
-    }
     .sa-green-paragraph {
       padding: 0 2% 0 2%;
-      font-size: 1.5em;
+      font-size: 1.2em;
       font-weight: 600;
       line-height: 2em;
       @media (max-width: $size1500) {

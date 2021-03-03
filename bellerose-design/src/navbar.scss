@@ -4,6 +4,7 @@ $roboto: "roboto";
 
 $size1000: 1000px;
 $size800: 800px;
+$size500: 500px;
 
 .navbar {
   width: 100%;
@@ -29,6 +30,9 @@ $size800: 800px;
   justify-content: space-between;
   @media (max-width: $size800) {
     font-size: .8em;
+  }
+  @media (max-width: $size500) {
+    display: none;
   }
   a:hover {
     color: rgb(192, 191, 191);

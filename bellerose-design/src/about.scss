@@ -43,10 +43,7 @@ $size500: 500px;
     }
     .about-green-box-title {
       padding: 5% 2% 0 2%;
-      font-size: 36px;
-      @media (max-width: $size1500) {
-        font-size: 1.7em;
-      }
+      font-size: 2em;
       @media (max-width: $size800) {
         font-size: 1.5em;
       }
@@ -56,11 +53,11 @@ $size500: 500px;
     }
     .about-green-box-paragraph {
       padding: 0 2% 0 2%;
-      font-size: 20px;
+      font-size: 1.2em;
       font-weight: 600;
       line-height: 30px;
       @media (max-width: $size1500) {
-        font-size: 1.15em;
+        font-size: 1.2em;
       }
       @media (max-width: $size800) {
         font-size: 0.88em;

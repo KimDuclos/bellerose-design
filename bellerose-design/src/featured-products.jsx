@@ -4,9 +4,9 @@ import "./featured-products.scss";
 const FeaturedProducts = () => {
   return (
     <div className="featured-products">
-      <div className="top-section">
+      <div className="fi-top-section">
         <img src="/images/photo-4-1.png" alt="interior design" />
-        <div className="top-green-box">
+        <div className="fi-top-green-box">
           <h1 className="fi-top-green-title">Interior Design in Boston, Manchester and Providence</h1>
           <p className="fi-top-green-paragraph">
             Modern living in New England offers so much potential to homeowners.

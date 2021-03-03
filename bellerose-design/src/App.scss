@@ -1,0 +1,8 @@
+$size500: 500px;
+
+.app-navbar {
+    display: none;
+    @media (max-width: $size500) {
+        display: none;
+    }
+}

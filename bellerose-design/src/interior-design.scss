@@ -19,7 +19,7 @@ $size500: 500px;
     text-align: center;
   }
   .top-green-box {
-    width: 50%;
+    max-width: 55%;
     background-color: #7c904a;
     color: white;
     font-family: $roboto;
@@ -30,11 +30,8 @@ $size500: 500px;
       width: 100%;
     }
     .green-box-title {
-      padding: 0% 2% 0 2%;
+      padding: 2.5% 2% 0 2%;
       font-size: 2em;
-      @media (max-width: $size1500) {
-        font-size: 1.7em;
-      }
       @media (max-width: $size800) {
         font-size: 1.5em;
       }

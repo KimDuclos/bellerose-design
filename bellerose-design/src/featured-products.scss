@@ -4,26 +4,29 @@ $roboto: "roboto";
 
 $size1500: 1500px;
 
-.top-section {
+.fi-top-section {
     display: flex;
     flex-direction: row;
-  .top-green-box {
+  .fi-top-green-box {
     height: 312px;
     width: 1000px;
     background-color: #7c904a;
     color: white;
     font-family: $roboto;
-    .top-green-title {
+    .fi-top-green-title {
       padding: 5% 2% 0 2%;
-      font-size: 36px;
+      font-size: 2em;
+      @media (max-width: $size1500) {
+          padding: 2% 1% 0 2%;
+      }
     }
-    .top-green-paragraph {
+    .fi-top-green-paragraph {
       padding: 0 2% 0 2%;
-      font-size: 20px;
+      font-size: 1.2em;
       font-weight: 600;
       line-height: 30px;
       @media (max-width: $size1500) {
-          font-size: 2em;
+          font-size: 1.2em;
       }
     }
   }
