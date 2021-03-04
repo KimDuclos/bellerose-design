@@ -1,7 +1,7 @@
 import TopBar from "./top-bar.jsx";
 import Logo from "./logo.jsx";
 import Navbar from "./navbar.jsx";
-import Hamburger from "./hamburger-nav.jsx"
+import HamMenu from "./ham-menu.jsx";
 import Footer from "./footer.jsx";
 import "./App.scss";
 
@@ -10,8 +10,8 @@ function App() {
     <>
       <TopBar />
       <Logo />
+      <HamMenu />
       <Navbar />
-      <Hamburger />
       <Footer />
     </>
   );

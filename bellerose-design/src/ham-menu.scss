@@ -1,0 +1,44 @@
+/* Hambuger Menu Dropdown */
+
+$size501: 501px;
+
+/* The ul styling */
+.hamburgerDropDown {
+    position: fixed;
+    width: 400px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    list-style-type: none;
+    line-height: 200%;
+    width: auto;
+    margin: 3% 0 0 0;
+    padding: 0%;
+    border: 1px solid black;
+    font-size: 1em;
+    .nav-link {
+        width: 90%;
+        margin: 0 auto;
+    }
+    a:link {
+        text-decoration: none;
+        color: black;
+    }
+    a:visited {
+        color: black;
+    }
+    a:hover {
+        background-color: gray;
+    }
+  }
+  
+  /* Position of the hamburger symbol */
+  .hambar {
+    right: -140px;
+    position: relative;
+    display: inline-block;
+    margin: 5% 0 5% 19%;
+    @media (min-width: $size501) {
+        display: none;
+    }
+  }
