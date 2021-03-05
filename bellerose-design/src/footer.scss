@@ -30,7 +30,7 @@ $large-mobile: 800px;
         width: 45%;
         input {
           color: #969393;
-          font-size: 18px;
+          font-size: .4em;
           font-family: $roboto;
           border-radius: 4px;
           font-weight: bold;
@@ -45,14 +45,14 @@ $large-mobile: 800px;
         input {
           width: 45%;
           border-radius: 4px;
-          font-size: 18px;
+          // font-size: .4em;
           font-family: $roboto;
           font-weight: bold;
         }
         textarea {
           width: 45%;
           border-radius: 4px;
-          font-size: 18px;
+          font-size: .434em;
           font-family: $roboto;
           font-weight: bold;
         }
@@ -135,24 +135,26 @@ $large-mobile: 800px;
     }
   }
   .footer-bottom {
-    max-width: 100%;
     height: auto;
     background-color: #393939;
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    .copyright {
+      font-size: .5em;
+      margin: auto 0 auto 1%;
+    }
     .social-icons {
+      // width: auto;
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       align-content: center;
-      margin: .4% 0 0 0;
+      margin: .4% 1% 0 5%;
       .icon {
-        height: 70%;
-        width: 40px;
-        .instagram {
-          height: 50%;
-        }
+        height: 60%;
+        width: 5%;
+        margin: 0 1% 0 0;
       }
     }
   }

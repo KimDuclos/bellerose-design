@@ -1,6 +1,10 @@
 import React from "react";
 import "./footer.scss";
 import Button from "./button.jsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
+import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
+import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -9,7 +13,7 @@ const Footer = () => {
         WORK WITH US
         <hr></hr>
         <form className="form" id="form">
-          <div className="info">
+          <div className="info" style={{ width: "70%" }}>
             <input
               type="text"
               name="name"
@@ -34,7 +38,7 @@ const Footer = () => {
               type="textarea"
               name="message"
               placeholder="Message"
-              style={{ height: "200px", borderStyle: "none" }}
+              style={{ height: "200px", width: "70%", borderStyle: "none" }}
             />
           </div>
           <div className="submit">
@@ -87,12 +91,15 @@ const Footer = () => {
           Local SEO by Kim Duclos
         </p>
         <div className="social-icons">
-          <img
+          <FontAwesomeIcon className="icon" icon={faFacebookSquare} />
+          <FontAwesomeIcon className="icon" icon={faInstagramSquare} />
+          <FontAwesomeIcon className="icon" icon={faTwitterSquare} />
+          {/* <img
             src="/images/instagram-icon.png"
             alt="Instragram icon"
             className="icon instagram"
-          />
-          <img
+          /> */}
+          {/* <img
             src="/images/facebook-icon.png"
             alt="Facebook icon"
             className="icon facebook"
@@ -101,7 +108,7 @@ const Footer = () => {
             src="/images/twitter-icon.png"
             alt="Twitter icon"
             className="icon twitter"
-          />
+          /> */}
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@
 
 $roboto: "roboto";
 
+$size1500: 1500px;
 $size1000: 1000px;
 $size800: 800px;
 $size500: 500px;
@@ -114,15 +115,21 @@ $size500: 500px;
     .content-1-2-left-photos {
       display: flex;
       flex-direction: row;
-      @media (max-width: $size1000) {
-        width: 1000px;
-      }
       .left-photos {
+        @media (max-width: $size1500) {
+          max-width: 50%;
+        }
         @media (max-width: $size1000) {
-          width: 50%;
+          max-width: 50%;
         }
       }
       .blue-library {
+        @media (max-width: $size1000) {
+          max-width: 50%;
+        }
+        @media (max-width: $size800) {
+          max-width: 50%;
+        }
         @media (max-width: $size500) {
           display: none;
         }
