@@ -1,6 +1,7 @@
 /* Hambuger Menu Dropdown */
 
 $size501: 501px;
+$size425: 425px;
 
 /* The ul styling */
 .hamburgerDropDown {
@@ -40,5 +41,8 @@ $size501: 501px;
     margin: 5% 0 5% 19%;
     @media (min-width: $size501) {
         display: none;
+    }
+    @media (max-width: $size425) {
+        margin: 4% 0 4% 13%;
     }
   }

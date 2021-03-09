@@ -2,6 +2,7 @@
 
 $size1000: 1000px;
 $size800: 800px;
+$size425: 425px;
 
 
 .top-bar {
@@ -19,6 +20,12 @@ $size800: 800px;
   @media (max-width: $size800) {
     max-width: 800px;
   }
+  @media (max-width: $size425) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 1% 0 8% 0;
+  }
   .search-box {
     background-color: #ffffff;
     width: 15%;
@@ -34,10 +41,19 @@ $size800: 800px;
       width: 25%;
       padding: 0 0 0 1%;
     }
+    @media (max-width: $size425) {
+      // width: 100%;
+      // margin: 1% 0 1% 0
+      display: none;
+    }
   }
   .locations {
     color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
+    @media (max-width) {
+      height: 50%;
+      margin: 0 0 10% 0;
+    }
   }
 }
