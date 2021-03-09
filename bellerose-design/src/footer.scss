@@ -4,6 +4,7 @@ $roboto: "roboto";
 
 $tablet: 1000px;
 $large-mobile: 800px;
+$size425: 425px;
 
 .footer {
   .top-section {
@@ -18,6 +19,9 @@ $large-mobile: 800px;
     justify-content: center;
     hr {
       width: 14%;
+      @media (max-width: $size425) {
+        width: 70%;
+      }
     }
     .form {
       display: flex;
@@ -30,7 +34,7 @@ $large-mobile: 800px;
         width: 45%;
         input {
           color: #969393;
-          font-size: .4em;
+          font-size: 0.4em;
           font-family: $roboto;
           border-radius: 4px;
           font-weight: bold;
@@ -52,7 +56,7 @@ $large-mobile: 800px;
         textarea {
           width: 45%;
           border-radius: 4px;
-          font-size: .434em;
+          font-size: 0.434em;
           font-family: $roboto;
           font-weight: bold;
         }
@@ -61,6 +65,11 @@ $large-mobile: 800px;
         font-family: $roboto;
         font-size: 20px;
         margin: 2% 0 0 0;
+        .button {
+          @media (max-width: $size425) {
+            max-width: 72%;
+          }
+        }
       }
     }
   }
@@ -142,19 +151,28 @@ $large-mobile: 800px;
     flex-direction: row;
     justify-content: space-around;
     .copyright {
-      font-size: .5em;
+      font-size: 0.5em;
       margin: auto 0 auto 1%;
+      @media (max-width: $size425) {
+        width: 200%;
+      }
     }
     .social-icons {
       // width: auto;
       display: flex;
       justify-content: flex-end;
       align-content: center;
-      margin: .4% 1% 0 5%;
+      margin: 0.4% 1% 0 5%;
+      @media (max-width: $size425) {
+        margin: 2% 0 0 0;
+      }
       .icon {
         height: 60%;
         width: 5%;
         margin: 0 1% 0 0;
+        @media (max-width: $size425) {
+          width: 15%;
+        }
       }
     }
   }

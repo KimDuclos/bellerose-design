@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="footer">
       <div className="top-section">
         WORK WITH US
-        <hr></hr>
+        <hr className="white-line"></hr>
         <form className="form" id="form">
           <div className="info" style={{ width: "70%" }}>
             <input
