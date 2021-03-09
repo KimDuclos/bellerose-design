@@ -16,14 +16,14 @@ const ServiceArea = () => {
             of you and your chosen part of the country.
           </p>
         </div>
-        <img className="liv-room" src="/images/photo-3-1.png" alt="living room" />
-        <img className="office" src="/images/photo-3-2.png" alt="office" />
+        <img className="kitchen-bar" src="/images/kitchen-bar.jpg" alt="kitchen bar" />
+        <img className="tv-room" src="/images/tv-room.jpg" alt="TV room" />
       </div>
       <div className="sa-main-text">
         <h1 className="sa-title">A New England Home from an Experienced Team</h1>
         <p className="sa-paragraph">
           Bring the beauty of New England into your home with Bellerose Interior
-          Design. Serving the Boston, Manchesterand Providence areas, the design
+          Design. Serving the Boston, Manchester and Providence areas, the design
           team will come to you for a consultation.
         </p>
         <h2>A Perfectly Designed Home is Worth Having</h2>

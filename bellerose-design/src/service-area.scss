@@ -59,12 +59,16 @@ $size500: 500px;
       }
     }
   }
-  .office {
+  .kitchen-bar {
+    width: 30%;
+  }
+  .tv-room {
+    width: 30%;
     @media (max-width: $size800) {
       display: none;
     }
   }
-  .office {
+  .tv-room {
     @media (max-width: $size1000) {
       display: none;
     }
