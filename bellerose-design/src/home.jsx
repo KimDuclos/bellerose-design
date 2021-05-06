@@ -53,10 +53,10 @@ const Home = () => {
               alt="plant shelving"
             />
             <img
-              className="left-photos"
+              className="left-photos blue-library"
               src="/images/photo-1-3.png"
-              alt="blue library"
-              className="blue-library"
+              alt="blue book room"
+              // className="blue-library"
             />
           </div>
           <div className="content-1-2-left-text">
